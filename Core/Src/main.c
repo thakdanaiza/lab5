@@ -234,6 +234,7 @@ void UARTInterrupConfig()
 }
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
+	//test
 	if(Mode == 1)
 		{
 			if(RxBuffer[0] == 97) //speed up 1 Hz
